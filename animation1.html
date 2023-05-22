@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation 1</title>
+    <style>
+        #box
+        {
+            height:200px;
+            width:200px;
+            margin-top: 50px;
+            background-color: red;
+            animation: demo 4s infinite;
+        }
+        @keyframes demo{
+            from{transform: translate(0px,0px) ;}
+            to{transform:translate(1000px,400px) rotate(360deg) scale(0.5);background-color: rgb(255, 255, 0);}
+        }
+        .box
+        {
+            height:200px;
+            width:200px;
+            background-color: red;
+            margin:60px;
+            border-radius: 40%;
+            float:left;
+            margin-top:400px ;
+            animation: sahdev 5s infinite;
+        }
+        @keyframes sahdev
+        {
+            from{transform: rotate(0deg)}
+            to{transform: rotate(180deg); background-color: yellowgreen;}
+        }
+        h1{
+            padding-top: 90px;
+            padding-left: 45px;
+        }
+        /* @keyframes sahdev
+        {
+            0%{background-color: lightblue;}
+            15%{background-color: lightgreen;}
+            30%{background-color: lightseagreen;}
+            45%{background-color: lightgoldenrodyellow;}
+            60%{background-color: lightcoral;}
+            75%{background-color: lightsalmon;}
+            90%{background-color: lightpink;}
+            100%{background-color: lightyellow;}
+        } */
+    </style>
+</head>
+<body>
+    <div id="box"><h1>Sahdev</h1></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</body>
+</html>
